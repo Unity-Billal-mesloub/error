@@ -1,12 +1,12 @@
 # @semantic-release/error
 
-Error type used by all [semantic-release](https://github.com/semantic-release/semantic-release) packages.
+Error type used by all [semantic-release](https://github.com/Unity-Billal-mesloub/semantic-release) packages.
 
-[![Build Status](https://github.com/semantic-release/error/workflows/Test/badge.svg)](https://github.com/semantic-release/error/actions?query=workflow%3ATest+branch%3Amaster)
+[![Build Status](https://github.com/Unity-Billal-mesloub/error/workflows/Test/badge.svg)](https://github.com/Unity-Billal-mesloub/error/actions?query=workflow%3ATest+branch%3Amaster)
 
-Errors of type `SemanticReleaseError` or an inherited type will be considered by [semantic-release](https://github.com/semantic-release/semantic-release) as an expected exception case (no release to be done, running on a PR etc..). That indicate to the `semantic-release` process to stop and exit with the `0` success code.
+Errors of type `SemanticReleaseError` or an inherited type will be considered by [semantic-release](https://github.com/Unity-Billal-mesloub/semantic-release) as an expected exception case (no release to be done, running on a PR etc..). That indicate to the `semantic-release` process to stop and exit with the `0` success code.
 
-Any other type of error will be considered by [semantic-release](https://github.com/semantic-release/semantic-release) as an unexpected error (i/o issue, code problem etc...). That indicate to the `semantic-release` process to stop, log the error and exit with the `1` failure code.
+Any other type of error will be considered by [semantic-release](https://github.com/Unity-Billal-mesloub/semantic-release) as an unexpected error (i/o issue, code problem etc...). That indicate to the `semantic-release` process to stop, log the error and exit with the `1` failure code.
 
 ## Usage
 

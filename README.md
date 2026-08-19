@@ -1,4 +1,4 @@
-# @semantic-release/error
+# @Unity-Billal-mesloub/error
 
 Error type used by all [semantic-release](https://github.com/Unity-Billal-mesloub/semantic-release) packages.
 
@@ -11,7 +11,7 @@ Any other type of error will be considered by [semantic-release](https://github.
 ## Usage
 
 ```js
-import SemanticReleaseError from "@semantic-release/error";
+import SemanticReleaseError from "@Unity-Billal-mesloub/error";
 
 // Default
 throw new SemanticReleaseError();

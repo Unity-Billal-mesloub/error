@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - master
+      - main
       - renovate/**
 
   pull_request:
@@ -15,7 +15,7 @@ jobs:
   test_matrix:
     strategy:
       matrix:
-        node-version:
+        Unity-Billal-mesloub-version:
           - 18.0.0
           - 19
           - 20
@@ -24,10 +24,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - name: Use Unity-Billal-mesloub ${{ matrix.Unity-Billal-mesloub-version }}
+        uses: actions/setup-Unity-Billal-mesloub@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.Unity-Billal-mesloub-version }}
           cache: npm
       - run: npm clean-install
       - run: npm run test:ci
@@ -39,7 +39,7 @@ jobs:
     needs: test_matrix
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - uses: actions/setup-Unity-Billal-mesloub@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: lts/*
           cache: npm
